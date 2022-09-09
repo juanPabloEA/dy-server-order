@@ -14,25 +14,25 @@ public class OrderController {
 
     @PostMapping("/order")
     public ResponseEntity<OrderResponse> addOrder(@RequestBody OrderRequest orderRequest) {
-        LOGGER.info("init: OrderController::addOrder");
-        return ResponseEntity.ok(OrderResponse.builder().build());
+        LOGGER.info("start: OrderController::addOrder");
+        return ResponseEntity.ok(OrderResponse.builder().result("OK").build());
     }
 
-    @GetMapping("/order")
-    public ResponseEntity<OrderResponse> getOrder(@PathVariable(name = "orderId") String orderId) {
-        LOGGER.info("init: OrderController::getOrder");
-        return ResponseEntity.ok(OrderResponse.builder().build());
+    @GetMapping("/order/{orderId}")
+    public ResponseEntity<OrderResponse> getOrder(@PathVariable String orderId) {
+        LOGGER.info("start: OrderController::getOrder");
+        return ResponseEntity.ok(OrderResponse.builder().result("OK").build());
     }
 
     @PutMapping("/order")
     public ResponseEntity<OrderResponse> putOrder(@RequestBody OrderRequest orderRequest) {
-        LOGGER.info("init: OrderController::putOrder");
-        return ResponseEntity.ok(OrderResponse.builder().build());
+        LOGGER.info("start: OrderController::putOrder");
+        return ResponseEntity.ok(OrderResponse.builder().result("OK").build());
     }
 
-    @DeleteMapping("/order")
-    public ResponseEntity<String> deleteOrder(@PathVariable(name = "orderId") String orderId) {
-        LOGGER.info("init: OrderController::deleteOrder");
+    @DeleteMapping("/order/{orderId}")
+    public ResponseEntity<String> deleteOrder(@PathVariable String orderId) {
+        LOGGER.info("start: OrderController::deleteOrder");
         return ResponseEntity.ok(HttpStatus.ACCEPTED.toString());
     }
 }
