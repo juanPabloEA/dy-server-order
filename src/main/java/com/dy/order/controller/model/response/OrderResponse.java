@@ -1,4 +1,4 @@
-package com.dy.order.controller.model;
+package com.dy.order.controller.model.response;
 
 import lombok.*;
 
