@@ -19,28 +19,28 @@ public class OrderController {
         this.orderUseCase = orderUseCase;
     }
 
-    @PostMapping("/order")
+    @PostMapping(value = "order")
     public ResponseEntity<OrderResponse> addOrder(@RequestBody OrderRequest orderRequest) {
         LOGGER.info("start: OrderController::addOrder");
         orderUseCase.addOrder(orderRequest);
         return ResponseEntity.ok(OrderResponse.builder().result("OK").build());
     }
 
-    @GetMapping("/order/{orderId}")
+    @GetMapping(value = "order/{orderId}")
     public ResponseEntity<OrderResponse> getOrder(@PathVariable String orderId) {
         LOGGER.info("start: OrderController::getOrder");
         orderUseCase.getOrder(orderId);
         return ResponseEntity.ok(OrderResponse.builder().result("OK").build());
     }
 
-    @PutMapping("/order")
+    @PutMapping(value = "order")
     public ResponseEntity<OrderResponse> putOrder(@RequestBody OrderRequest orderRequest) {
         LOGGER.info("start: OrderController::putOrder");
         orderUseCase.editOrder(orderRequest);
         return ResponseEntity.ok(OrderResponse.builder().result("OK").build());
     }
 
-    @DeleteMapping("/order/{orderId}")
+    @DeleteMapping(value = "order/{orderId}")
     public ResponseEntity<String> deleteOrder(@PathVariable String orderId) {
         LOGGER.info("start: OrderController::deleteOrder");
         orderUseCase.deleteOrder(orderId);

@@ -13,4 +13,6 @@ public class DeliveryRequest {
 
     private String references;
 
+    private Boolean state;
+
 }
