@@ -1,4 +1,4 @@
-package com.dy.order.config;
+package com.dy.order.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -2,6 +2,8 @@ package com.dy.order.controller.model.request;
 
 import lombok.*;
 
+import java.util.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -13,6 +15,6 @@ public class DeliveryRequest {
 
     private String references;
 
-    private Boolean state;
+    private Date date;
 
 }

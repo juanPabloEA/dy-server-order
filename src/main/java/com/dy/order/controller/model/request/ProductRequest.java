@@ -11,13 +11,10 @@ import java.util.List;
 @Builder
 public class ProductRequest {
 
-    private String size;
+    private String id;
 
-    private String biscuit;
+    private Integer quantity;
 
-    private String cover;
+    private List<AggregatesRequest> aggregate;
 
-    private List<String> filling;
-
-    private String observation;
 }

@@ -12,11 +12,14 @@ import java.util.List;
 @Builder
 public class OrderRequest {
 
-    private Date date;
+    private PaymentMethodRequest paymentMethod;
+
+    private Date orderDate;
 
     private List<ProductRequest> products;
 
     private ClientRequest client;
 
     private DeliveryRequest delivery;
+
 }
