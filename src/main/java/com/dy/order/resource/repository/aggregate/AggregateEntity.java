@@ -25,7 +25,7 @@ public class AggregateEntity {
 
     public AggregateCategoryEntity getCategory() {
         try {
-            var res = FirestoreUtil.getDocumentReferenceToObject(category, AggregateCategoryEntity.builder().build().getClass()).orElse(null);
+            var res = FirestoreUtil.getDocumentReferenceToObject(category, AggregateCategoryEntity.class).orElse(null);
             return (AggregateCategoryEntity) res;
         } catch (Exception e) {
             e.printStackTrace();
