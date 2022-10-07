@@ -10,6 +10,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Optional;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
@@ -18,18 +20,15 @@ public class AggregateEntity {
     @DocumentId
     private String id;
     private String name;
-
-    @Reference(AggregateCategoryEntity.class)
     private DocumentReference category;
     private  Long price;
 
-    public AggregateCategoryEntity getCategory() {
+    public Optional<AggregateCategoryEntity> getOptionalCategory() {
         try {
-            var res = FirestoreUtil.getDocumentReferenceToObject(category, AggregateCategoryEntity.class).orElse(null);
-            return (AggregateCategoryEntity) res;
+            return (Optional<AggregateCategoryEntity>) FirestoreUtil.getDocumentReferenceToObject(category, AggregateCategoryEntity.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return Optional.empty();
     }
 }

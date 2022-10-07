@@ -76,7 +76,6 @@ public abstract class FirestoreRepository<T> {
             if (documentSnapshot.exists()) {
                 return Optional.ofNullable(documentSnapshot.toObject(parameterizedType));
             }
-
         } catch (InterruptedException | ExecutionException e) {
             log.error("Exception occurred retrieving: {} {}, {}", collectionName, documentId, e.getMessage());
         }
