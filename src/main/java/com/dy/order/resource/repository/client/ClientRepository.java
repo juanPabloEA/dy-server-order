@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class ClientRepository extends FirestoreRepository<ClientEntity> {
 
-    public ClientRepository(Firestore firestore, @Value("${firestore.config.collection.client}") String collection) {
+    public ClientRepository(Firestore firestore, @Value("${firebase.config.collection.client}") String collection) {
         super(firestore, collection);
     }
 

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 public class AggregateCategoryRepository extends FirestoreRepository<AggregateCategoryEntity> {
     public AggregateCategoryRepository(
             Firestore firestore,
-            @Value("${firestore.config.collection.aggregate_category}") String collection) {
+            @Value("${firebase.config.collection.aggregate_category}") String collection) {
         super(firestore, collection);
     }
 }

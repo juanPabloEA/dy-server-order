@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class ProductCategoryRepository extends FirestoreRepository<ProductCategoryEntity> {
-    public ProductCategoryRepository(Firestore firestore, @Value("${firestore.config.collection.product_category}") String collection) {
+    public ProductCategoryRepository(Firestore firestore, @Value("${firebase.config.collection.product_category}") String collection) {
         super(firestore, collection);
     }
 }

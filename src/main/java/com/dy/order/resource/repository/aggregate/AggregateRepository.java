@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class AggregateRepository extends FirestoreRepository<AggregateEntity> {
-    public AggregateRepository(Firestore firestore, @Value("${firestore.config.collection.aggregate}") String collection) {
+    public AggregateRepository(Firestore firestore, @Value("${firebase.config.collection.aggregates}") String collection) {
         super(firestore, collection);
     }
 }

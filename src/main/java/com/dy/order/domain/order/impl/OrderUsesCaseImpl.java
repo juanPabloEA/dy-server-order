@@ -31,6 +31,7 @@ public class OrderUsesCaseImpl implements OrderUseCase {
 
     @Override
     public OrderResponse getOrder(String id) {
+        var res = orderService.getOrder(id);
         return OrderResponse.builder().result("Ok").build();
     }
 }

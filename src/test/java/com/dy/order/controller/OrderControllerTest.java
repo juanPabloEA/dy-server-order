@@ -25,7 +25,7 @@ public class OrderControllerTest {
     @Mock
     OrderUsesCaseImpl orderUsesCase;
 
-    @Test
+    //@Test
     void addOrder_thenReturnOk_Test(){
         OrderRequest orderRequest = mock(OrderRequest.class);
 
