@@ -1,8 +1,8 @@
-package com.dy.order.resource.repository.aggregate.model;
+package com.dy.order.resource.datasource.aggregate.model;
 
 import com.dy.order.resource.config.firestore.DocumentId;
 import com.dy.order.resource.config.firestore.FirestoreUtil;
-import com.dy.order.resource.repository.aggregate_category.model.AggregateCategoryEntity;
+import com.dy.order.resource.datasource.aggregate_category.model.AggregateCategoryEntity;
 import com.google.cloud.firestore.DocumentReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -9,7 +9,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DeliveryEntity {
+public class DeliveryModel {
     private Date date;
     private String direction;
     private String reference;

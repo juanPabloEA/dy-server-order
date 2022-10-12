@@ -5,10 +5,11 @@ import lombok.*;
 
 @Setter
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class OrderAggregateEntity {
-    private DocumentReference aggregateId;
-    private Long quantity;
+public class OrderPaymentMethodModel {
+    private Boolean status;
+    private Long total;
+    private DocumentReference type;
 }

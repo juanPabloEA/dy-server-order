@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ClientEntity {
+public class ClientModel {
 
     @DocumentId
     private String id;

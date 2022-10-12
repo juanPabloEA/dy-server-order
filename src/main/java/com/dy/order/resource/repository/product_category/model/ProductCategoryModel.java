@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-public class ProductCategoryEntity {
+public class ProductCategoryModel {
     @DocumentId
     private String id;
     private String name;

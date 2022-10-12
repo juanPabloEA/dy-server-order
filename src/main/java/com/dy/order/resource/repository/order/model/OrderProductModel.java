@@ -10,8 +10,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderProductEntity {
-    private List<OrderAggregateEntity> aggregates;
+public class OrderProductModel {
+    private List<OrderAggregateModel> aggregates;
     private DocumentReference productId;
     private Long quantity;
 }

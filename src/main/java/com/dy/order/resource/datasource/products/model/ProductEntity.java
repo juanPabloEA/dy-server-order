@@ -1,8 +1,8 @@
-package com.dy.order.resource.repository.products.model;
+package com.dy.order.resource.datasource.products.model;
 
 import com.dy.order.resource.config.firestore.DocumentId;
 import com.dy.order.resource.config.firestore.FirestoreUtil;
-import com.dy.order.resource.repository.product_category.model.ProductCategoryEntity;
+import com.dy.order.resource.datasource.product_category.model.ProductCategoryEntity;
 import com.google.cloud.firestore.DocumentReference;
 import lombok.*;
 

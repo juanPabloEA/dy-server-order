@@ -1,15 +1,14 @@
-package com.dy.order.resource.repository.payment_method.model;
+package com.dy.order.resource.datasource.product_category.model;
 
 import com.dy.order.resource.config.firestore.DocumentId;
 import lombok.*;
 
-@NoArgsConstructor
 @AllArgsConstructor
-@Setter
+@NoArgsConstructor
 @Getter
+@Setter
 @Builder
-public class PaymentMethodEntity {
-
+public class ProductCategoryEntity {
     @DocumentId
     private String id;
     private String name;

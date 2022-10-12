@@ -1,4 +1,4 @@
-package com.dy.order.resource.repository.aggregate_category.model;
+package com.dy.order.resource.datasource.aggregate_category.model;
 
 import com.dy.order.resource.config.firestore.DocumentId;
 import lombok.*;
