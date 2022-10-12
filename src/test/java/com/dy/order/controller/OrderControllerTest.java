@@ -2,9 +2,6 @@ package com.dy.order.controller;
 
 import com.dy.order.controller.model.request.OrderRequest;
 import com.dy.order.controller.model.response.OrderResponse;
-import com.dy.order.domain.order.OrderUseCase;
-import com.dy.order.domain.order.impl.OrderUsesCaseImpl;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

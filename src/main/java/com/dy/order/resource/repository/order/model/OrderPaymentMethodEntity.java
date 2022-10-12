@@ -1,4 +1,4 @@
-package com.dy.order.resource.repository.order;
+package com.dy.order.resource.repository.order.model;
 
 import com.google.cloud.firestore.DocumentReference;
 import lombok.*;

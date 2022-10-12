@@ -1,6 +1,5 @@
-package com.dy.order.resource.repository.order;
+package com.dy.order.resource.repository.order.model;
 
-import com.dy.order.resource.repository.payment_method.PaymentMethodEntity;
 import com.google.cloud.firestore.DocumentReference;
 import lombok.*;
 

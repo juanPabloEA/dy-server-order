@@ -1,4 +1,4 @@
-package com.dy.order.resource.repository.client;
+package com.dy.order.resource.repository.client.model;
 
 import com.dy.order.resource.config.firestore.DocumentId;
 import lombok.*;

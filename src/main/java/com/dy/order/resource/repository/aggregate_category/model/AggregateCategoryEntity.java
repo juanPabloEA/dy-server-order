@@ -1,14 +1,14 @@
-package com.dy.order.resource.repository.product_category;
+package com.dy.order.resource.repository.aggregate_category.model;
 
 import com.dy.order.resource.config.firestore.DocumentId;
 import lombok.*;
 
+@Setter
+@Getter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
-@Builder
-public class ProductCategoryEntity {
+public class AggregateCategoryEntity {
     @DocumentId
     private String id;
     private String name;

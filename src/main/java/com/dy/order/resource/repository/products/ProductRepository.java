@@ -1,6 +1,7 @@
 package com.dy.order.resource.repository.products;
 
 import com.dy.order.resource.config.firestore.FirestoreRepository;
+import com.dy.order.resource.repository.products.model.ProductEntity;
 import com.google.cloud.firestore.Firestore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
