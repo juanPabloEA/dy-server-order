@@ -10,7 +10,6 @@ import lombok.*;
 @Builder
 public class ClientModel {
 
-    @DocumentId
     private String id;
     private String name;
     private Long number;

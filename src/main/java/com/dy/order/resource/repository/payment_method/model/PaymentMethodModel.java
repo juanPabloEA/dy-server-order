@@ -9,8 +9,6 @@ import lombok.*;
 @Getter
 @Builder
 public class PaymentMethodModel {
-
-    @DocumentId
     private String id;
     private String name;
     private String description;

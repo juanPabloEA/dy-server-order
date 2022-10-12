@@ -9,7 +9,6 @@ import lombok.*;
 @Setter
 @Builder
 public class ProductCategoryModel {
-    @DocumentId
     private String id;
     private String name;
     private String description;

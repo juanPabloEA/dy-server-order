@@ -1,5 +1,6 @@
 package com.dy.order.resource.repository.order.model;
 
+import com.dy.order.resource.repository.client.model.ClientModel;
 import com.google.cloud.firestore.DocumentReference;
 import lombok.*;
 
@@ -12,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class OrderModel {
-    private DocumentReference clientId;
+    private ClientModel clientId;
     private DeliveryModel delivery;
     private Date orderDate;
     private OrderPaymentMethodModel paymentMethod;
