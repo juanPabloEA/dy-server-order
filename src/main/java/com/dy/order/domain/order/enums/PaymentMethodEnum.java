@@ -1,4 +1,4 @@
-package com.dy.order.common.enums;
+package com.dy.order.domain.order.enums;
 
 public enum PaymentMethodEnum {
     CASH,

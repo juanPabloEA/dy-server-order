@@ -1,6 +1,6 @@
 package com.dy.order.controller.model.request;
 
-import com.dy.order.common.enums.PaymentMethodEnum;
+import com.dy.order.domain.order.enums.PaymentMethodEnum;
 import lombok.*;
 
 @NoArgsConstructor

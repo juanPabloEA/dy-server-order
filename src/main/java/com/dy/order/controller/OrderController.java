@@ -38,8 +38,7 @@ public class OrderController {
     @GetMapping(value = "order/{orderId}")
     public ResponseEntity<OrderResponse> getOrder(@PathVariable String orderId) {
         LOGGER.info("start: OrderController::getOrder");
-        getOrderUseCase.execute(orderId);
-        return ResponseEntity.ok(OrderResponse.builder().build());
+        return ResponseEntity.ok(getOrderUseCase.execute(orderId));
     }
 
     @PutMapping(value = "order")

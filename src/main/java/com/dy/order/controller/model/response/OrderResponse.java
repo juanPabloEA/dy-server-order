@@ -1,5 +1,6 @@
 package com.dy.order.controller.model.response;
 
+import com.dy.order.resource.repository.order.model.OrderModel;
 import lombok.*;
 
 @AllArgsConstructor
@@ -8,4 +9,5 @@ import lombok.*;
 @Builder
 public class OrderResponse {
     private String result;
+    private OrderModel orderModel;
 }

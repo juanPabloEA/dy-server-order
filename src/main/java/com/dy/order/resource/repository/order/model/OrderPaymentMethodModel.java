@@ -1,5 +1,6 @@
 package com.dy.order.resource.repository.order.model;
 
+import com.dy.order.resource.repository.payment_method.model.PaymentMethodModel;
 import com.google.cloud.firestore.DocumentReference;
 import lombok.*;
 
@@ -11,5 +12,5 @@ import lombok.*;
 public class OrderPaymentMethodModel {
     private Boolean status;
     private Long total;
-    private DocumentReference type;
+    private PaymentMethodModel type;
 }

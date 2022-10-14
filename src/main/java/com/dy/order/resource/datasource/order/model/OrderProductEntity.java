@@ -15,7 +15,7 @@ import java.util.Optional;
 @NoArgsConstructor
 @Builder
 public class OrderProductEntity {
-    private List<OrderAggregateEntity> aggregates;
+    private List<OrderAggregateEntity> aggregate;
     private DocumentReference productId;
     private Long quantity;
 
